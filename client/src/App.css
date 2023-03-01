@@ -1,0 +1,101 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0rem 1rem;
+}
+.app-container h1 {
+  text-align: center;
+  font-weight: 500;
+  margin: 0.75rem 0rem;
+}
+.conversation-container {
+  flex: 1;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+/* Select the scrollbar */
+.conversation-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Select the thumb */
+.conversation-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Select the track */
+.conversation-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.app-input-container {
+  display: flex;
+  align-items: center;
+  margin: 0.75rem auto;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444654;
+  border-radius: 7px;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+.conversation-container {
+  width: 700px;
+  margin: 0rem auto;
+}
+.app-input-container input {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  color: white;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.app-input-container svg {
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 5px;
+}
+.app-input-container svg:hover {
+  background-color: #6b6e80;
+}
+.query-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 1.25rem 0rem;
+}
+.query-container svg {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.conversation-reponse img {
+  max-width: 25px;
+  margin-right: 0.5rem;
+}
+.app-input-container button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  color: white;
+}
+@media (max-width: 900px) {
+  .app-input-container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  .conversation-container {
+    width: 90%;
+  }
+  .conversation-container p {
+    width: 90%;
+  }
+}
