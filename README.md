@@ -14,7 +14,7 @@ To clone the ChatGPT project, follow these steps:
 2. Install the dependencies for the frontend
 3. Install the dependencies for the backend
 4. Create your own OpenAI account and create an API key
-5. Create a .env file and declare the API key
+5. Create a .env file inside the 'server' folder and declare the API key
 4. Start the backend and frontend server using the command npm start.
 
 The ChatGPT clone should now be running on http://localhost:3000.
